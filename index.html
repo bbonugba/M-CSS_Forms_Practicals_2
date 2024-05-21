@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M-CSS_Forms_2</title>
+    <link rel="stylesheet" href="materialize.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <header></header>
+    <main>
+        <div class="container">
+            <h4>Sign Up Form</h4>
+            <form action="">
+            <div class="row">
+                <div class="col s12 l4">
+                    <div class="input-field">
+                        <input type="text" name="" id="first_name">
+                        <label for="first_name"> First Name</label>
+                    </div>
+                </div>
+                <div class="col s12 l4">
+                    <div class="input-field">
+                        <input type="text" name="" id="last_name">
+                        <label for="last_name"> Last Name</label>
+                    </div>
+                </div>
+                <div class="col s12 l4"></div>
+            </div>
+            
+            <div class="row">
+                <div class="col s12 l4">
+                    <div class="input-field">
+                        <input type="number" name="" id="phone_number">
+                        <label for="phone_number"> Telephone</label>
+                    </div>
+                </div>
+                <div class="col s12 l4">
+                    <div class="input-field">
+                        <input type="email" name="" id="email">
+                        <label for="email"> E-mail Address</label>
+                    </div>
+                </div>
+                <div class="col s12 l4"></div>
+            </div>
+            
+            <div class="row">
+                <div class="col s12 l4">
+                    <div class="input-field">
+                        <i class="material-icons prefix">date_range</i>
+                        <input type="text" name="" id="" class="datepicker" placeholder="Date of Birth">
+                    </div>
+                </div>
+                    <div class="input-field col s12 l4">
+                        <select>
+                          <option value="1">Male</option>
+                          <option value="2">Female</option>
+                          <option value="3">Other</option>
+                        </select>
+                        <label>Gender</label>
+                      </div>
+                <div class="input-field col s12 l4">
+                    <select name="" id="maritalstatus">
+                        <option value="">Married</option>
+                        <option value="">Single</option>
+                        <option value="">Divorced</option>
+                        <option value="">Widowed</option>
+                        <option value="">Complicated</option>
+                    </select>
+                    <label for="maritalstatus">Marital Status</label>
+                </div>
+            </div>
+             
+            <div class="row">
+                <div class="col s12">
+                    <span>Days of training:</span>
+                    <p>
+                        <label for="monday">
+                            <input type="checkbox" name="" id="monday">
+                            <span>Monday</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label for="tuesday">
+                            <input type="checkbox" name="" id="tuesday">
+                            <span>Tuesday</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label for="wednesday">
+                            <input type="checkbox" name="" id="wednesday">
+                            <span>Wednesday</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label for="thursday">
+                            <input type="checkbox" name="" id="thursday">
+                            <span>Thursday</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label for="friday">
+                            <input type="checkbox" name="" id="friday">
+                            <span>Friday</span>
+                        </label>
+                    </p>
+                    
+                </div>
+            </div>   
+            <div class="row">
+                <div class="col s12">
+                    <div class="input-field">
+                        <i class="material-icons prefix">message</i>
+                        <textarea name="" id="" placeholder="tell us about yourself"  cols="20" rows="7" class="materialize-textarea"></textarea>
+                        <label for="about"></label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12">
+                        <span>Would you like to receive notifications and updates via e-mail?</span>
+                        <p>
+                            <label for="Yes">
+                                <input type="radio" class="with-gap" id="Yes" name="updates">
+                                <span>Yes</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label for="No">
+                                <input type="radio" class="with-gap" id="No" name="updates">
+                                <span>No</span>
+                            </label>
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12">
+                        <label for="accept">
+                            <input type="checkbox" name="" id="accept">
+                            <span>I accept the terms and conditions of this training</span>
+                        </label>
+                    </div>
+                </div>
+                <a href="" class="btn">Submit</a>
+            </div>  
+        </form>       
+        </div>
+
+
+    </main>
+    <footer></footer>
+
+
+
+
+    <!-- Javascript plug-in -->
+    <script src="js/jquery.js"></script>
+    <script src="js/materialize.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.datepicker').datepicker({
+                yearRange:50,
+                // disableWeekends:true
+            });
+        $('select').formselect();
+        });
+
+    </script>
+</body>
+</html>
